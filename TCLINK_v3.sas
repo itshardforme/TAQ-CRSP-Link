@@ -26,7 +26,7 @@ options nonotes;
 %let date2= %sysfunc(inputn(&enddate,yymmdd10.));
  %if &date1<&date2 %then %let NDAYS=%sysfunc(intck(DAY,&date1,&date2));
   %else %let NDAYS=0;
-%if &date1 < '01JAN2011'd then do;
+%if &date1 < '01JAN2011'd %then %do;
 	%put ### This macro works for 2011 and newer data only ###;
 %end;
 /* Begin Loop To Construct a 'Master' TAQ Master Dataset */
