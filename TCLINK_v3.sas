@@ -281,7 +281,7 @@ run;
 /* House Cleaning */
 proc sql; 
  drop table _Mast1,_Mast2,_Mast3,_MSENames,_CRSP1,_CRSP2,_CRSP3,
-  _Match1,_NoMap1,_NoMap2,_NoMap3,_NoMap4,_TAQLINK1,_TAQLINK1,_TAQLINK2,_TAQLINK2lag; 
+  _Match1,_NoMap1,_NoMap2,_NoMap3,_NoMap4,_TAQLINK1,_TAQLINK2,_TAQLINK2lag; 
 quit;
 
 %put; %put ### Done ; %put ;
